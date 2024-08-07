@@ -1,0 +1,103 @@
+.testimonal {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+.testimonal .container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.testimonal .items {
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.testimonal .img {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.testimonal img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.testimonal i {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1eb2a6;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.testimonal .name {
+  margin-top: 15px;
+}
+
+.testimonal .name h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.testimonal .name span {
+  color: #1eb2a6;
+}
+
+.testimonal p {
+  margin-top: 20px;
+  color: grey;
+  transition: 0.5s;
+}
+
+.testimonal .items:hover {
+  background-color: #1eb2a6;
+  color: #fff;
+  cursor: pointer;
+}
+
+.testimonal .items:hover span,
+.testimonal .items:hover p {
+  color: #fff;
+}
+
+.testimonal .items:hover i {
+  background-color: #fff;
+  color: #1eb2a6;
+}
+
+/* Grid layout adjustments */
+.content.grid2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .testimonal .container {
+    padding: 0 15px;
+  }
+  
+  .testimonal .items {
+    padding: 20px;
+  }
+  
+  .testimonal .name h2 {
+    font-size: 18px;
+  }
+  
+  .testimonal p {
+    font-size: 14px;
+  }
+}

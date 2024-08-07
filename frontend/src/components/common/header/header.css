@@ -1,0 +1,129 @@
+/*--------head------------*/
+.head {
+  padding: 20px 0;
+  color: #090707;
+}
+.logo h1 {
+  font-size: 35px;
+  font-weight: 900;
+}
+.head .icon {
+  margin-left: 10px;
+}
+/*--------head------------*/
+
+/*--------header------------*/
+header {
+  background-color: #323535;
+  margin: 0 30px;
+}
+header .nav {
+  display: flex !important;
+}
+header li {
+  margin-right: 40px;
+}
+header ul {
+  padding: 30px 20px;
+}
+header ul li a {
+  color: #fff;
+  font-weight: 500;
+  transition: 0.5s;
+}
+header ul li a:hover {
+  color:#323535;
+}
+.start {
+  background-color:#323535;
+  padding: 30px 70px;
+  color: #fff;
+  clip-path: polygon(10% 0%, 100% 0, 100% 100%, 0% 100%);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align items to the end */
+}
+
+/* Ensure buttons are on the same line and spaced */
+.start .button,
+.start .logout {
+  margin-left: 15px; /* Space between buttons */
+  margin-right: 0;
+}
+
+.start .button {
+  background-color: #fff;
+  color: #1eb2a6;
+  border: none;
+  padding: 10px 20px;
+  
+  font-size: 1em;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none; /* Ensures the button text is underlined */
+  text-align: center; /* Ensures the button text is centered */
+  display: inline-block; /* Ensures the button displays inline */
+}
+
+.start .button:hover {
+  background-color: #f0f0f0; /* Light grey on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+.start .logout {
+  background-color: #323535; /* Red color for logout button */
+  color: white;
+   
+   
+   
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+.start .logout:hover {
+  background-color:  #f0f0f0; /* Darker red on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Mobile View Adjustments */
+@media screen and (max-width: 768px) {
+  .start {
+    clip-path: none;
+    justify-content: space-between; /* Align items in space between layout */
+  }
+  header {
+    margin: 0;
+    background-color: #1eb2a6;
+    position: relative;
+  }
+  header ul.flexSB {
+    display: none;
+  }
+  header ul li {
+    margin-bottom: 20px;
+  }
+  .toggle {
+    display: block;
+    background: none;
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    right: 0;
+    top: -20px;
+  }
+  .mobile-nav {
+    position: absolute;
+    top: 7vh;
+    left: 0;
+    width: 100%;
+    background-color: #1eb2a6;
+  }
+  /* Ensure buttons are visible on mobile */
+  header .start .button,
+  header .start .logout {
+    margin-right: 10px; /* Adjust margin for mobile view */
+    padding: 10px 15px; /* Adjust padding for smaller screens */
+    font-size: 0.9em; /* Slightly smaller text on mobile */
+  }
+}
